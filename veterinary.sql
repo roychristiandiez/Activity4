@@ -25,6 +25,7 @@ FOREIGN KEY ownerid REFERENCES owners(ownerid)
 
 );
 
+
 CREATE TABLE appointments (
 
 appointid INT,
@@ -33,5 +34,17 @@ appointdate DATE,
 reason VARCHAR(255),
 PRIMARY KEY (appointid),
 FOREIGN KEY animalid REFERENCES animals(animalid)
+
+);
+
+CREATE TABLE doctors (
+
+dortorid INT,
+dfirstnames VARCHAR (50),
+dlastname VARCHAR (50),
+specialty VARCHAR (100),
+phone VARCHAR (15),
+email VARCHAR (100),
+PRIMARY KEY (doctorid)
 
 );
