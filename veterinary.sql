@@ -146,3 +146,8 @@ VALUES (1,1,'2023-01-05 00:00:00',1,'Healthy check-_','N/A','Regular check-up,no
 /*ADD A NEW COLUMN NAME REGISTEREDDATE AS DATE IN THE OWNERS TABLE.*/
 ALTER TABLE owners
 ADD registereddate DATE;
+
+/*rename the COLUMN NAME paymentdate to paymenttime.*/
+ALTER TABLE payments
+CHANGE paymentdate paymenttime
+DATETIME;
