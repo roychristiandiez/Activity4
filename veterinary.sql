@@ -160,3 +160,7 @@ WHERE pet_name = 'Simba the cat';
 UPDATE doctors
 SET lastname = 'reyes-gonzales'
 WHERE title = 'Dr.' AND first_name = 'Sofia';
+
+/*list the species that the veterinary catered.*/
+SELECT DISTINCT species
+FROM patients;
